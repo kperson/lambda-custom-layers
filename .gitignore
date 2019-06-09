@@ -1,3 +1,5 @@
 .DS_Store
 java-dist.zip
 java-dist/*
+.terraform/
+terraform.tfstate
