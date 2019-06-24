@@ -3,3 +3,4 @@ java-dist.zip
 java-dist/*
 .terraform/
 terraform.tfstate
+terraform.tfstate.backup
