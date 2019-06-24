@@ -1,6 +1,11 @@
 #!/bin/bash
 
+if [ -d "swift-shared-libs" ]; then
+	rm -rf swift-shared-libs
+fi
+
 mkdir -p swift-shared-libs/lib
+
 docker run \
 	--rm \
 	--volume "$(pwd)/:/src" \
