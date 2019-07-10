@@ -5,9 +5,9 @@ RUN apt-get update && \
     add-apt-repository ppa:linuxuprising/java && \
     apt-get update && \
     echo oracle-java11-installer shared/accepted-oracle-license-v1-2 select true | debconf-set-selections && \
-    apt-get install -y oracle-java11-installer && \
+    apt-get install -y oracle-java11-installer-local && \
     rm -rf /var/lib/apt/lists/* && \
-    rm -rf /var/cache/oracle-jdk11-installer
+    rm -rf /var/cache/oracle-java11-installer-local
 ENV JAVA_HOME /usr/lib/jvm/java-11-oracle
 
 ADD  modules.txt  modules.txt
